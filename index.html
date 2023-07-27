@@ -32,7 +32,7 @@
           </nav>
         </div>
 
-        <div class="col d-flex align-items-center justify-content-center justify-content-lg-between">
+        <div class="col d-flex align-items-center justify-content-lg-between">
           <i style="color: gray;" class="fa-solid fa-bars d-none d-lg-block"></i>
           <i style="color: gray;" class="fa-solid fa-circle-question d-none d-lg-block"></i>
           <i style="color: gray;" class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
@@ -87,9 +87,9 @@
         <section class="all">
 
           <section class="new_student bg-primary">
-            <div class="row flex-column">
+            <div class="row flex-column flex-md-row py-md-3 align-items-md-start">
 
-              <div class="col ps-4 my-3 d-flex">
+              <div class="col ps-4 my-3 d-flex order-md-3 justify-content-xl-center">
                 <span class="d-flex align-items-center me-2">Nuovo studente</span>
 
                 <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
@@ -102,8 +102,8 @@
 
                   <div class="offcanvas-body">
 
-                    <div class="mb-1 d-lg-flex">
-                      <div class="col me-lg-3">
+                    <div class="mb-1 d-md-flex">
+                      <div class="col me-md-3">
                         <label for="exampleFormControlInput1" class="form-label">Nome</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1">
                       </div>
@@ -167,7 +167,7 @@
                 </div>
               </div>
 
-              <div class="col ps-4 mb-3">
+              <div class="col ps-4 mb-3 order-md-1">
                 <div class="d-flex align-items-end">
                   <h3 class="me-2">Boolean</h3>
                   <h6>
@@ -182,18 +182,363 @@
 
                   <i class="fa-solid fa-angles-right me-1 pt-1"></i>
                   
-                  <h6>
+                  <h6 class="d-lg-none">
                     <span style="background-color: rgba(0, 0, 0, 0.267)" class="badge rounded-pill">+</span>
+                  </h6>
+
+                  <h6 class="d-none d-xl-block me-1">
+                    <span style="background-color: rgba(0, 0, 0, 0.267)" class="badge rounded-pill">Boolean mobile app</span>
+                  </h6>
+
+                  <h6 class="d-none d-xl-block me-1">
+                    <span style="background-color: rgba(0, 0, 0, 0.267)" class="badge rounded-pill">Boolean web app</span>
+                  </h6>
+
+                  <h6 class="d-none d-xl-block">
+                    <span style="background-color: rgba(0, 0, 0, 0.267)" class="badge rounded-pill">Boolean blog app</span>
                   </h6>
                 </div>
               </div>
 
-              <div class="col ps-4 pb-3">
+              <div class="col ps-4 pb-3 order-md-2 text-xl-center">
                 <span>Studenti online negli ultimi 30 minuti</span> <br>
-                <span class="fs-4">125</span>
+                <span class="fs-4"><strong>125</strong></span>
               </div>
             </div>
           </section>
+
+          <div>
+
+            <section class="class p-3">
+        
+            <div class="card p-3">
+              <div class="card-header">
+                <h5>Prossime classi</h5>
+              </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th class="col-6 col-md-4 col-lg-6">Nome</th>
+                          <div class="d-none d-md-flex">
+                            <th class="text-center">Data inizio</th>
+                            <th class="text-center">ROI</th>
+                          </div>
+                          <th class="text-center">Stato</th>
+                          <th class="text-center">Azioni</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                        <td class="fs-6">
+                          <i class="fa-solid fa-code me-1 p-2 rounded-circle"></i>
+                          Classe 75
+                        </td>
+
+                        <div class="d-none d-flex">
+                          <td class="fs-6 text-center">
+                            23/11/2022
+                          </td>
+  
+                          <td class="fs-6 text-center">
+                            20%
+                          </td>
+                        </div>
+
+                        <td class="text-center">
+                          <h6><span class="badge bg-success">Done</span></h6>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-pencil p-2"></i>
+                          <i class="fa-solid fa-trash p-2"></i>
+                        </td>
+                        </tr>
+  
+                        <tr>
+                        <td class="fs-6">
+                          <i class="fa-solid fa-code me-1 p-2 rounded-circle"></i>
+                          Classe 76
+                        </td>
+
+                        <div class="d-none d-flex">
+                          <td class="fs-6 text-center">
+                            23/11/2022
+                          </td>
+  
+                          <td class="fs-6 text-center">
+                            20%
+                          </td>
+                        </div>
+
+                        <td class="text-center">
+                          <h6><span class="badge bg-success">Done</span></h6>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-pencil p-2"></i>
+                          <i class="fa-solid fa-trash p-2"></i>
+                        </td>
+                        </tr>
+  
+                        <tr>
+                        <td class="fs-6">
+                          <i class="fa-solid fa-code me-1 p-2 rounded-circle"></i>
+                          Classe 77
+                        </td>
+
+                        <div class="d-none d-flex">
+                          <td class="fs-6 text-center">
+                            23/11/2022
+                          </td>
+  
+                          <td class="fs-6 text-center">
+                            20%
+                          </td>
+                        </div>
+
+                        <td class="text-center">
+                          <h6><span class="badge bg-warning">Process</span></h6>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-pencil p-2"></i>
+                          <i class="fa-solid fa-trash p-2"></i>
+                        </td>
+                        </tr>
+  
+                        <tr>
+                        <td class="fs-6">
+                          <i class="fa-solid fa-code me-1 p-2 rounded-circle"></i>
+                          Classe 78
+                        </td>
+
+                        <div class="d-none d-flex">
+                          <td class="fs-6 text-center">
+                            23/11/2022
+                          </td>
+  
+                          <td class="fs-6 text-center">
+                            20%
+                          </td>
+                        </div>
+
+                        <td class="text-center">
+                          <h6><span class="badge bg-success">Done</span></h6>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-pencil p-2"></i>
+                          <i class="fa-solid fa-trash p-2"></i>
+                        </td>
+                        </tr>
+  
+                        <tr>
+                        <td class="fs-6">
+                          <i class="fa-solid fa-code me-1 p-2 rounded-circle"></i>
+                          Classe 79
+                        </td>
+
+                        <div class="d-none d-flex">
+                          <td class="fs-6 text-center">
+                            23/11/2022
+                          </td>
+  
+                          <td class="fs-6 text-center">
+                            20%
+                          </td>
+                        </div>
+
+                        <td class="text-center">
+                          <h6><span class="badge bg-danger">Done</span></h6>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-pencil p-2"></i>
+                          <i class="fa-solid fa-trash p-2"></i>
+                        </td>
+                        </tr>
+  
+                        <tr>
+                        <td class="fs-6">
+                          <i class="fa-solid fa-code me-1 p-2 rounded-circle"></i>
+                          Classe 80
+                        </td>
+
+                        <div class="d-none d-flex">
+                          <td class="fs-6 text-center">
+                            23/11/2022
+                          </td>
+  
+                          <td class="fs-6 text-center">
+                            20%
+                          </td>
+                        </div>
+
+                        <td class="text-center">
+                          <h6><span class="badge bg-success">Done</span></h6>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-pencil p-2"></i>
+                          <i class="fa-solid fa-trash p-2"></i>
+                        </td>
+                        </tr>
+  
+                        <tr>
+                        <td class="fs-6">
+                          <i class="fa-solid fa-code me-1 p-2 rounded-circle"></i>
+                          Classe 81
+                        </td>
+
+                        <div class="d-none d-flex">
+                          <td class="fs-6 text-center">
+                            23/11/2022
+                          </td>
+  
+                          <td class="fs-6 text-center">
+                            20%
+                          </td>
+                        </div>
+
+                        <td class="text-center">
+                          <h6><span class="badge bg-danger">Done</span></h6>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-pencil p-2"></i>
+                          <i class="fa-solid fa-trash p-2"></i>
+                        </td>
+                        </tr>
+  
+                        <tr>
+                        <td class="fs-6">
+                          <i class="fa-solid fa-code me-1 p-2 rounded-circle"></i>
+                          Classe 82
+                        </td>
+
+                        <div class="d-none d-flex">
+                          <td class="fs-6 text-center">
+                            23/11/2022
+                          </td>
+  
+                          <td class="fs-6 text-center">
+                            20%
+                          </td>
+                        </div>
+
+                        <td class="text-center">
+                          <h6><span class="badge bg-success">Done</span></h6>
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-pencil p-2"></i>
+                          <i class="fa-solid fa-trash p-2"></i>
+                        </td>
+                        </tr>
+                      </tbody>
+                      
+                  </table>
+                  
+                </blockquote>
+              </div>
+            </div>
+            
+            </section>
+
+            <section class="faq p-3">
+              <div class="card" style="width: 100%;">
+                <div class="card-header">
+                  <h5>F.A.Q.</h5>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Come aggiungere un nuovo studente?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, class. This is the first item's accordion body.</div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Come posso accedere alle informazioni del mio account?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the class. This is the second item's accordion body.</div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Posso usare questa dashboard da mobile?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the class. This is the third item's accordion body.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="todo p-3">
+              <div class="card" style="width: 100%;">
+                <div class="card-header">
+                  <h5>Todo</h5>
+                </div>
+
+                <ul class="list-group p-3">
+                  <li class="list-group-item d-flex">
+                    <input type="checkbox" class="me-2">
+                    Kickoff classi nuove
+                  </li>
+                  <li class="list-group-item d-flex">
+                    <input type="checkbox" class="me-2">
+                    Lezione su Bootstrap 5 in classe #75
+                  </li>
+                  <li class="list-group-item d-flex">
+                    <input type="checkbox" class="me-2">
+                    Controllare username github studenti
+                  </li>
+                </ul>
+                
+              </div>
+            </section>
+
+            <section class="utents p-3">
+              <div class="card p-3" style="width: 100%;">
+                <div class="card-header">
+                </div>
+
+                <div class="card" style="width: 100%">
+                  <img src="./img/stats.jpeg" class="card-img-top" alt="stats">
+                  <div class="card-body">
+                    <h5 class="card-title">Utenti attivi</h5>
+                    <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Gennaio: 1200</li>
+                    <li class="list-group-item">Febbraio: 800</li>
+                    <li class="list-group-item">Marzo: 1500</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Visualizza report approfondito</a>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+          </div>
 
         </section>
       </div>

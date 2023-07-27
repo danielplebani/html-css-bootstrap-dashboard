@@ -50,7 +50,36 @@ header #search::placeholder{
     color: white;
 }
 
+.class{
+    color: black;
+}
+
+.class .table hr{
+    color: gray;
+}
+
+.class .table .fa-code{
+    color: white;
+    background-color: #eb654c;
+}
+
+.class .table .fa-pencil, .class .table .fa-trash{
+    color: gray;
+    font-size: large;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
 /*footer*/
+
+/*responsive*/
+@media screen and (max-width:575px){
+
+    .new_student .offcanvas-end{
+        width: 100%;
+    }
+}
+
 
 @media screen and (min-width:992px){
 
@@ -63,7 +92,6 @@ header #search::placeholder{
     }
 
     .new_student .offcanvas-end{
-        width: 800px;
+        width: 700px;
     }
-
 }
