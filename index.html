@@ -14,7 +14,7 @@
   <body>
 
     <header>
-      <div class="d-flex h-100 p-2">
+      <div class="d-flex p-2">
 
         <div class="col d-flex align-items-center justify-content-center">
           <img id="logo_mobile" src="./img/mobile-logo.png" alt="logo" class="d-lg-none">
@@ -54,29 +54,148 @@
 
     <main>
       <div class="d-flex">
-        <section style="color: white;" class="sidebar d-flex flex-column justify-content-between">
+
+        <section class="sidebar d-flex flex-column justify-content-between">
+
         <div class="d-flex flex-column align-items-center pt-4">
+
           <div class="mb-4 d-flex">
-            <i class="fa-solid fa-house fs-4"></i>
+            <i class="col-5 fa-solid fa-house fs-4"></i>
             <span class="d-none d-lg-block ms-2">Home</span>
           </div>
+
           <div class="mb-4 d-flex">
-            <i class="fa-solid fa-chart-simple fs-4 me-2"></i>
+            <i class="col-5 fa-solid fa-chart-simple fs-4"></i>
             <span class="d-none d-lg-block ms-2">Stats</span>
           </div>
+
           <div class="d-flex">
-            <i class="fa-solid fa-signal fs-4"></i>
+            <i class="col-5 fa-solid fa-signal fs-4"></i>
             <span class="d-none d-lg-block ms-2">Signals</span>
           </div>
+
         </div>
 
-        <div class="d-flex justify-content-center pb-4">
-          <i class="fa-solid fa-gear fs-4"></i>
-          <span class="d-none d-lg-block ms-2">Admin</span>
+        <div class="ps-3 pb-4 d-lg-flex justify-content-center">
+
+          <i class="col-2 fa-solid fa-gear fs-4"></i>
+
+          <span class="d-none d-lg-block ms-3">Admin</span>
         </div>
         </section>
 
-        <section class="all"></section>
+        <section class="all">
+
+          <section class="new_student bg-primary">
+            <div class="row flex-column">
+
+              <div class="col ps-4 my-3 d-flex">
+                <span class="d-flex align-items-center me-2">Nuovo studente</span>
+
+                <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"                 aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+
+                  <div class="offcanvas-body">
+
+                    <div class="mb-1 d-lg-flex">
+                      <div class="col me-lg-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                      </div>
+  
+                      <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label">Cognome</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                    </div>
+
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress" class="form-label">Indirizzo</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Indirizzo 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Città</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="inputState" class="form-label">Stato</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>scegli...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Cap</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                      <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Seleziona per proseguire
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary me-1">Salva</button>
+                        <button type="submit" class="btn btn-warning">Svuota</button>
+                      </div>
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col ps-4 mb-3">
+                <div class="d-flex align-items-end">
+                  <h3 class="me-2">Boolean</h3>
+                  <h6>
+                    <span style="background-color: rgba(0, 0, 0, 0.267)" class="badge rounded-pill">Piano blaze</span>
+                  </h6>
+                </div>
+
+                <div class="d-flex">
+                  <h6 class="me-1">
+                    <span style="background-color: rgba(0, 0, 0, 0.267)" class="badge rounded-pill">3 app</span>
+                  </h6>
+
+                  <i class="fa-solid fa-angles-right me-1 pt-1"></i>
+                  
+                  <h6>
+                    <span style="background-color: rgba(0, 0, 0, 0.267)" class="badge rounded-pill">+</span>
+                  </h6>
+                </div>
+              </div>
+
+              <div class="col ps-4 pb-3">
+                <span>Studenti online negli ultimi 30 minuti</span> <br>
+                <span class="fs-4">125</span>
+              </div>
+            </div>
+          </section>
+
+        </section>
       </div>
     </main>
 

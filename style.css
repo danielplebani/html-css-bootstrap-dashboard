@@ -5,6 +5,9 @@
 }
 
 /*header*/
+header{
+    height: 70px;
+}
 header #logo_mobile{
     width: 50px;
 }
@@ -28,26 +31,39 @@ header #search::placeholder{
 /*main*/
 /*sidebar*/
 .sidebar{
-    height: calc(100vh - 69.6px);
+    height: calc(100vh - 70px);
     width: 70px;
     background-color: #051e34;
     background-image: url("./img/sidebar-bg.png");
+    overflow: auto;
+    color: white;
 }
 
 /*all*/
 .all{
     height: calc(100vh - 69.6px);
-    width: 100%;
+    width: 100% ;
     overflow: auto;
 }
 
+.new_student{
+    color: white;
+}
 
 /*footer*/
 
 @media screen and (min-width:992px){
 
     .sidebar{
-        width: 130px;
+        width: 150px;
+    }
+
+    .all{
+        width: calc(100% - 150px);
+    }
+
+    .new_student .offcanvas-end{
+        width: 800px;
     }
 
 }
