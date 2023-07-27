@@ -13,9 +13,72 @@
   </head>
   <body>
 
-    <header></header>
+    <header>
+      <div class="d-flex h-100 p-2">
 
-    <main></main>
+        <div class="col d-flex align-items-center justify-content-center">
+          <img id="logo_mobile" src="./img/mobile-logo.png" alt="logo" class="d-lg-none">
+          <img src="./img/logo.svg" alt="logo" class="d-none d-lg-block">
+        </div>
+
+        <div class="col-10 col-lg-9 col-xxl-10">
+          <nav class="navbar">
+            <form class="container-fluid ">
+              <div class="input-group">
+                <span class="input-group-text bg-body-secondary" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input id="search" type="text" class="form-control bg-body-secondary ps-0" placeholder="Prova a cercare: lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            </form>
+          </nav>
+        </div>
+
+        <div class="col d-flex align-items-center justify-content-center justify-content-lg-between">
+          <i style="color: gray;" class="fa-solid fa-bars d-none d-lg-block"></i>
+          <i style="color: gray;" class="fa-solid fa-circle-question d-none d-lg-block"></i>
+          <i style="color: gray;" class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
+          <div class="dropdown">
+            <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-bell" style="color: #fe8c02;"></i>
+            </a>
+          
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <main>
+      <div class="d-flex">
+        <section style="color: white;" class="sidebar d-flex flex-column justify-content-between">
+        <div class="d-flex flex-column align-items-center pt-4">
+          <div class="mb-4 d-flex">
+            <i class="fa-solid fa-house fs-4"></i>
+            <span class="d-none d-lg-block ms-2">Home</span>
+          </div>
+          <div class="mb-4 d-flex">
+            <i class="fa-solid fa-chart-simple fs-4 me-2"></i>
+            <span class="d-none d-lg-block ms-2">Stats</span>
+          </div>
+          <div class="d-flex">
+            <i class="fa-solid fa-signal fs-4"></i>
+            <span class="d-none d-lg-block ms-2">Signals</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center pb-4">
+          <i class="fa-solid fa-gear fs-4"></i>
+          <span class="d-none d-lg-block ms-2">Admin</span>
+        </div>
+        </section>
+
+        <section class="all"></section>
+      </div>
+    </main>
 
     <footer></footer>
 

@@ -4,10 +4,50 @@
     box-sizing: border-box;
 }
 
-:root{}
-
 /*header*/
+header #logo_mobile{
+    width: 50px;
+}
+
+header .dropdown-toggle::after{
+    display: none;
+}
+
+header li{
+    font-size: small;
+}
+
+header #search::placeholder{
+    font-size: medium;
+}
+
+.navbar #search{
+    border-left: none;
+}
 
 /*main*/
+/*sidebar*/
+.sidebar{
+    height: calc(100vh - 69.6px);
+    width: 70px;
+    background-color: #051e34;
+    background-image: url("./img/sidebar-bg.png");
+}
+
+/*all*/
+.all{
+    height: calc(100vh - 69.6px);
+    width: 100%;
+    overflow: auto;
+}
+
 
 /*footer*/
+
+@media screen and (min-width:992px){
+
+    .sidebar{
+        width: 130px;
+    }
+
+}
