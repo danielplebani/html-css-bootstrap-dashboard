@@ -34,6 +34,10 @@ header #search::placeholder{
     border-left: none;
 }
 
+header i:hover{
+    cursor: pointer;
+}
+
 /*main*/
 /*sidebar*/
 .sidebar{
