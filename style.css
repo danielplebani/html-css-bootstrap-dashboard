@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+/*utility*/
+.bg_white:hover{
+    background-color: rgba(255, 255, 255, 0.216);
+    cursor: pointer;
+}
+
 /*header*/
 header{
     height: 70px;
@@ -54,8 +60,12 @@ header #search::placeholder{
     color: black;
 }
 
-.class .table hr{
-    color: gray;
+.class .table th{
+    font-size: small;
+}
+
+.class .table tr{
+    cursor: pointer;
 }
 
 .class .table .fa-code{
@@ -70,14 +80,23 @@ header #search::placeholder{
     border-radius: 5px;
 }
 
-/*footer*/
+.table .fa-pencil:hover, .table .fa-trash:hover{
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+}
+
+.todo ul:hover{
+    cursor: pointer;
+}
 
 /*responsive*/
-@media screen and (max-width:575px){
+@media screen and (max-width:768px){
 
     .new_student .offcanvas-end{
         width: 100%;
     }
+
 }
 
 
@@ -94,4 +113,6 @@ header #search::placeholder{
     .new_student .offcanvas-end{
         width: 700px;
     }
+
+    
 }
